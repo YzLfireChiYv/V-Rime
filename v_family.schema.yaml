@@ -119,7 +119,7 @@ emoji_suggestion:
 reduce_english_filter:
   mode: 全部  # all | none | custom | 『留白』
   idx: 2        # 降低到第 idx 个位置
-  # 自定义的单词列表，示例列表没有降低部分常用单词，如 and cat mail Mac but bad shit ……
+  # 自定义的单词列表，示例列表没有降低部分常用单词，如 和 cat mail Mac but bad shit ……
   words: [aid, ann,
   bail, bait, bam, band, bans, bat, bay, bend, bent, benz, bib, bid, bien, biz, boc, bop, bos, bud, buf,
   cab, cad, cain, cam, cans, cap, cas, cef, chad, chan, chap, chef, cher, chew, chic, chin, chip, chit, coup, cum, cunt, cur,
@@ -288,7 +288,7 @@ radical_reverse_lookup:
   dictionary: radical_pinyin
   enable_completion: false
   enable_sentence: false
-  prefix: "Uu"
+  prefix: "uu"
     # comment_format:
   #   - erase/^.*$// # 删除注释
   tips: 〔拆字〕
@@ -316,7 +316,7 @@ reverse_lookup:
 #    - xlit/hspnz/一丨丿丶乙/
 
 punctuator:
-  import_preset: default
+  import_preset: 默认
   # 没有得默认拉取default里的，然后那边默认拉取 程序文件夹 data里的symbols文件。你也可以做一个扔用户文件夹里边
   half_shape:
       "#": "#"
@@ -338,7 +338,7 @@ punctuator:
     
 # 反查映射
 recognizer:
-  import_preset: default
+  import_preset: 默认
   patterns:
     url: "^[a-z]+[.].+$"
     punct: "^/([0-9]0?|[a-zA-Z]+)$"
@@ -352,7 +352,7 @@ recognizer:
 
 # 键位设置，此处有的会覆盖default里的，默认冲default里补充过来。注意语法的不同。不用担心重复，但方便起见，这里单独标记
 key_binder:
-  import_preset: default
+  import_preset: 默认
   bindings:
   # 表情😄emoji功能开关，建议保留。记得留意快捷键冲突，冲突的话可改为 has_menu 有输入框时
     - {accept: "Control+Shift+E", toggle: emoji_suggestion, when: always}
