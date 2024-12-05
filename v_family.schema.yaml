@@ -102,7 +102,7 @@ codeLengthLimit_processor: 66
 emoji_suggestion:
   opencc_config: emoji.json
   option_name: emoji_suggestion
-  tips: all
+  tips: 全部
   inherit_comment: false
 
 
@@ -117,7 +117,7 @@ emoji_suggestion:
 # 『留白』 不设置该选项，使用 reduce_english_filter 内全局设置内容
 # （匹配的是编码，不是单词）
 reduce_english_filter:
-  mode: all  # all | none | custom | 『留白』
+  mode: 全部  # all | none | custom | 『留白』
   idx: 2        # 降低到第 idx 个位置
   # 自定义的单词列表，示例列表没有降低部分常用单词，如 and cat mail Mac but bad shit ……
   words: [aid, ann,
@@ -154,7 +154,7 @@ corrector: "{comment}"
 translator:
   # enable_correction: true      # Rime自带的按键纠错，适用于手机26键 参考: https://github.com/rime/librime/pull/228
   # 字典文件
-  dictionary: rime_mint          # 使用的字典文件
+  dictionary: v_family          # 使用的字典文件
   spelling_hints: 8              # corrector.lua ：为了让错音错字提示的 Lua 同时适配全拼双拼，将拼音显示在 comment 中
   always_show_comments: true     # corrector.lua ：Rime 默认在 preedit 等于 comment 时取消显示 comment，这里强制一直显示，供 corrector.lua 做判断用。
   comment_format:               # 标记拼音注释，供 corrector.lua 做判断用
