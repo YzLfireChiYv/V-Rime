@@ -47,9 +47,11 @@ translator:
   # 对已上屏的词语进行自动编码以提高下次输入的命中率
   encode_commit_history: true
 
-# 符号输入在此定义，这里的会被个人方案覆盖故不推荐
+# 此处为符号设置，这里的内容会被schema覆盖/拉取。默认设置是schema拉取symbols里的，所以这里设置无效。
+# default文件里的可以直接去掉这项，但是schema文件里必须得有。
 punctuator:
-  import_preset: symbols  # 默认拉取程序文件夹data里的symbols文件。也可以单独弄一个到用户文件夹里。
+  import_preset: symbols  # 默认拉取程序文件夹symbols文件，优先级 用户文件夹里的>data文件夹里的。
+# 你也不是不能先在这里设置然后再让schema拉取这里的
 
 key_binder:
 # accept是接收，即 你实际按下的 快捷键。此处默认设置在data文件夹里的key_bingings文件里

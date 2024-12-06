@@ -307,39 +307,27 @@ reverse_lookup:
 #  dictionary: wubi98_mint
 #  enable_user_dict: false
 #  enable_completion: true
-#  prefix: "Uw"
+#  prefix: "uw"
 #  tips: 〔五笔〕
 #stroke:
 #  tag: stroke
 #  dictionary: stroke
 #  enable_user_dict: false
-#  prefix: 'Ui'
+#  prefix: 'ui'
 #  tips: 〔笔画〕
 #  preedit_format:
 #    - xlit/hspnz/一丨丿丶乙/
 
+# 此处为标点符号输入设置，该文件里必须有此项否则只有系统默认标点，没有中文的。等，也没有自动中文全角英文半角。
 punctuator:
-  import_preset: default
-  # 没有得默认拉取default里的，然后那边默认拉取 程序文件夹 data里的symbols文件。你也可以做一个扔用户文件夹里边
-  full_shape:
-    '/' : ／
-  half_shape:
-      "#": "#"
-      "*": "*"
-      '.' : { commit: 。 }
-      "`": "`"
-      "~": "~"
-      "@": "@"
-      "=": "="
-      "/": ["/", "÷",]
-      '\': "、"
-      "_" : "──"
-      "'": {pair: ["「", "」"]}
-      "[": ["【", "["]
-      "]": ["】", "]"]
-      "$": ["¥", "$", "€", "£", "¢", "¤"]
-      "<": ["《", "〈", "«", "<"]
-      ">": ["》", "〉", "»", ">"]
+# 如果你在default里设置了具体的 标点输入方案，那么此处可以引用default里的设置进行补充。如果default里引用的别处，则相当于空的。即 连续引用无效
+  import_preset: symbols  # 推荐到用户文件夹里，你手动导入的symbols文件里边统一修改，方便多端部署
+  # 语法参考链接：https://github.com/LEOYoon-Tsaw/Rime_collections/blob/master/Rime_description.md#%E7%A4%BA%E4%BE%8B-10
+  # 注：参看链接里的语法和symbols里的语法都是可行的。方便起见，以下放俩不启用的示例。不放全是因为懒（划掉）。
+#  full_shape:
+#    '#' : [ ＃, ⌘ ]
+#  half_shape:
+#      "#": "#"
     
 # 反查映射
 recognizer:
