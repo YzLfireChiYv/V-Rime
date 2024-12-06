@@ -321,6 +321,8 @@ reverse_lookup:
 punctuator:
   import_preset: default
   # 没有得默认拉取default里的，然后那边默认拉取 程序文件夹 data里的symbols文件。你也可以做一个扔用户文件夹里边
+  full_shape:
+    '/' : ／
   half_shape:
       "#": "#"
       "*": "*"
@@ -376,6 +378,6 @@ key_binder:
 # 切换拓展字符    - { when: always, accept: Control+Shift+5, toggle: extended_charset }
 # 切换中/西文标点    - { when: always, accept: [自行设置快捷键], toggle: ascii_punct }
     
-menu:
+#menu:
   # 候选词个数，此处会覆盖default里的
-  page_size: 6
+#  page_size: 6
