@@ -4,12 +4,10 @@
 # Fork From: https://github.com/rime/librime/blob/3bc65c990546aa2062ecd1eb593d54d2949644cd/data/minimal/default.yaml
 config_version: "12.07.12"
 
-# 以下内容，实际会由default.custom.yaml和方案配置所覆写
+# 以下内容，实际会由default.custom.yaml和方案配置所覆写。若考虑后续更新，不推荐在此文件更改，更建议用default.custom.yaml覆写
 schema_list:
   - schema: v_family   # V家全拼
   - schema: radical_pinyin  # 拆偏旁部首输入
-#  - schema: rime_mint  # 薄荷拼音，需要自行开启
-#  - schema: t9        # 仓九宫格-全拼输入，依赖于 rime_mint
 
 switcher:
   # 以下为切换方案时显示的标题
@@ -25,11 +23,11 @@ switcher:
     - ascii_punct # 保留西文模式
     - transcription     # 保留汉字简繁体选项
     - emoji_suggestion  # Emoji
-  # 折叠选项以节省空间，多方案时建议折叠 true ，一个方案建议展开 false
-  fold_options: true
+  # 折叠选项以节省空间，多方案时建议折叠 true ，一个方案建议展开 false。因为默认都是全拼一个方案，所以false
+  fold_options: false
   # 对选项进行缩写
   abbreviate_options: true
-  # 选项之间的分隔符
+  # 方案切换选项之间的分隔符
   option_list_separator: '／'
 
 menu:
@@ -53,6 +51,7 @@ punctuator:
   import_preset: symbols  # 默认拉取程序文件夹symbols文件，优先级 用户文件夹里的>data文件夹里的。
 # 你也不是不能先在这里设置然后再让schema拉取这里的
 
+# 此处按键来源与官方默认，基本无更改只有删减。
 key_binder:
 # accept是接收，即 你实际按下的 快捷键。此处默认设置在data文件夹里的key_bingings文件里
   bindings:
@@ -106,7 +105,8 @@ key_binder:
     # 推荐的简体繁体切换方案，有输入框时，接收“ctrl+shift+1/!”
     - { when: has_menu, accept: Control+Shift+exclam, toggle: transcription }
     - { when: has_menu, accept: Control+Shift+1, toggle: transcription }
-    
+    # 注意，此处不是自带的繁简切换，是独立的翻译方案。
+
 recognizer:
   # 定义识别码的正则表达式规则
   patterns:
