@@ -1,0 +1,63 @@
+# Rime dictionary
+# encoding: utf-8
+#
+# 中文V家独立词典，此版本为手工录入初代版本，很不完善
+---
+name: v_family_cn
+version: "2024.12.24"
+sort: by_weight
+...
+# 虚拟歌姬正式名以及初稿，此部分萌娘百科词典全部收录且已#，此处方便整理和附加权重
+#  禾念（稔转换改到openCCg翻译实现）
+禾念	he nian	99
+洛天依	luo tian yi	99
+雅音宫羽	ya yin gong yu	99
+乐正绫	yue zheng ling	99
+绫彩音	ling cai yin	99
+言和	yan he	99
+乐正龙牙	yue zheng long ya	99
+牙音	ya yin	50
+徵羽摩柯	zheng yu mo ke	99
+墨清弦	mo qing xian	99
+# 平行四界/五维介质
+平行四界	ping xing si jie	99
+五维介质	wu wei jie zhi	99
+星尘	xing chen	99
+赤羽	chi yu	99
+诗岸	shi an	99
+苍穹	cang qiong	99
+海伊	hai yi	99
+牧心	mu xin	99
+# 湾湾
+心华	xin hua	99
+夏语遥	xia yu yao	99
+# 其她中文虚拟歌姬
+东方栀子	dong fang zhi zi	99
+起氏双子	qi shi shuang zi	90
+# 偏正式的别称、组合名称等，萌娘百科收录过的那种
+南北组	nan bei zu	99
+阿绫	a ling	99
+
+# 散装相关名称
+天依	tian yi	99
+天钿	tian dian	50
+雅音	ya yin	90
+宫羽	gong yu	90
+锦依卫	jin yi wei	99
+御厨团	yu chu tuan	99
+
+林正月	lin zheng yue	50
+乐正集团	yue zheng ji tuan	90
+御绫军	yu ling jun	99
+月挣零	yue zheng ling	50
+
+墨姐	mo jie	50
+
+杨桃精	yang tao jing	50
+减减	jian jian	90
+尘宝	chen bao	90
+无限尘	wu xian chen	50
+赤草鸡	chi cao ji	90
+海蜇皮	hai zhe pi	90
+
+字典娘	zi dian niang	90
