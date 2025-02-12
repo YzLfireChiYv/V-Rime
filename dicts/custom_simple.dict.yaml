@@ -1,0 +1,13 @@
+# Rime dictionary
+# encoding: utf-8
+#
+# 个人辞典配置
+---
+name: custom_simple
+version: "2024.12.5"
+sort: by_weight
+...
+
+# 人名
+
+
